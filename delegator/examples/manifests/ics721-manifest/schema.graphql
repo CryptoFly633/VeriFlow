@@ -1,0 +1,25 @@
+type interchainnftreceive @entity{
+  " { Transaction hash }"
+  id: ID!
+
+" Transaction hash of the transaction that emitted this event "
+  hash: String!
+
+  " Account that sent the tokens "
+  sender: String!
+
+ " Account that received the tokens "
+  receiver: String!
+
+" class_id associated with the NFT, similar to the contract address of ERC721"
+  class_id:String!
+  
+  " token_id is a unique identifier of the NFT"
+  token_id:String!
+
+  " Timestamp of this event "
+  timestamp: BigInt!
+
+  "contract address ：ics721"
+  contract_address: String!
+}

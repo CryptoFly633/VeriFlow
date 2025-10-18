@@ -1,0 +1,12 @@
+{
+  "src": {
+    "chain-id": "test-2"
+  },
+  "dst": {
+    "chain-id": "test-1"
+  },
+  "src-channel-filter": {
+    "rule": null,
+    "channel-list": []
+  }
+}

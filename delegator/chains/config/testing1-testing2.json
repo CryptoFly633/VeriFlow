@@ -1,0 +1,28 @@
+{
+    "$schema": "../ibc_data.schema.json",
+    "chain_1": {
+        "chain_name": "testing-1",
+        "client_id": "testing-1",
+        "connection_id": "connection-1"
+    },
+    "chain_2": {
+        "chain_name": "testing-2",
+        "client_id": "testing-2",
+        "connection_id": "connection-1"
+    },
+    "channels": [
+        {
+            "chain_1": {
+                "channel_id": "channel-182",
+                "port_id": "transfer"
+            },
+            "chain_2": {
+                "channel_id": "channel-12",
+                "port_id": "transfer"
+            },
+            "ordering": "unordered",
+            "version": "ics20-1",
+            "tags": {}
+        }
+    ]
+}

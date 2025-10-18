@@ -1,0 +1,22 @@
+syntax = "proto3";
+package request_proto;
+option go_package = "relayer/specy/types";
+
+service Regulator {
+    rpc GetTaskResult (stream TaskRequest) returns (stream TaskResponse) {}
+}
+
+message TaskRequest {
+    bytes taskhash = 1;
+    string rule_file = 2;
+    string input_data = 3;
+}
+
+message TaskResponse {
+    bytes taskhash = 1;
+    bool status =2;
+    string error_info = 3;
+    string output_data = 4;
+    string cproof = 5;
+    bytes signature = 6;
+}

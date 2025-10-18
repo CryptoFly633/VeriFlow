@@ -1,0 +1,20 @@
+specVersion: 0.0.5
+description: rewards module manifest
+repository: 
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: cosmos
+    name: specy
+    network: localnet
+    source:
+      startBlock: 0
+    mapping:
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Transfer
+      transactionHandlers:
+        - handler: handleTx
+     
+      file: ./src/mapping.ts

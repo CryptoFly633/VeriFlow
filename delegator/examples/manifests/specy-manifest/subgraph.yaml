@@ -1,0 +1,20 @@
+specVersion: 0.0.5
+description: specy module manifest
+repository: 
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: cosmos
+    name: specy
+    network: localnet
+    source:
+      startBlock: 0
+    mapping:
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - task
+      eventHandlers:
+        - event: create_task
+          handler: handleTaskEvent
+      file: ./src/mapping.ts

@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+description: rewards module manifest
+repository: 
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: cosmos
+    name: specy
+    network: localnet
+    source:
+      startBlock: 0
+    mapping:
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - rewardlist
+      eventHandlers:
+        - event: set_reward_list
+          handler: handleSetRewardList
+        - event: set_merkel_root
+          handler: handleSetMerkelList
+        - event: claim_reward
+          handler: handleClaimList
+      file: ./src/mapping.ts

@@ -1,0 +1,19 @@
+type rewardlist @entity{
+  " tash hash"
+  id: ID!
+
+  list:[String!]
+}
+
+type merkellist @entity{
+  id:ID!
+ timestamp: BigInt!
+  root:String!
+}
+
+type claimlist @entity{
+  id:ID!
+  address:String!
+  timestamp:BigInt!
+  status:String!
+}

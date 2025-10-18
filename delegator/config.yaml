@@ -1,0 +1,15 @@
+chain_info:
+  chain_id: specy-test-102
+  chain_binary_location: /home/ubuntu/gowork/bin/specyd
+  home_dir: /home/ubuntu/specy-env/specy/network/data/specy-test-102
+  node_address: tcp://127.0.0.1:16657
+  validator_wallet_address: cosmos18hl5c9xn5dze2g50uaw0l2mr02ew57zk2fgr8q
+
+engine_info:
+  engine_node_address: 127.0.0.1:50051
+  ias_report: iasreport
+  enclave_pk: enclavepk
+
+eth_info:
+  sk: 0x728036eaddd43af6cd267f002da557b6af5a3d5114a600e27703112f96ee54b1
+  

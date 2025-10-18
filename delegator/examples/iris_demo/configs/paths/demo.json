@@ -1,0 +1,14 @@
+{
+  "src": {
+    "chain-id": "ibc-2",
+    "port-id": "nonfungibletokentransfer"
+  },
+  "dst": {
+    "chain-id": "ibc-1",
+    "port-id": "nonfungibletokentransfer"
+  },
+  "src-channel-filter": {
+    "rule": null,
+    "channel-list": []
+  }
+}

@@ -1,0 +1,26 @@
+type task @entity{
+  " tash hash"
+  id: ID!
+
+" Task hash  "
+  hash: String!
+
+  " the task will call contract address or module "
+  contract_address: String!
+
+ " method or function "
+  method: String!
+
+" calldata"
+  calldata:String!
+  
+  " single call"
+  single:Boolean!
+
+  " rule file content "
+  rule_file: String
+
+  "task created address "
+  creator: String!
+}
+
