@@ -1,0 +1,14 @@
+syntax = "proto3";
+package specynetwork.specy.specy;
+
+option go_package = "github.com/specy-network/specy/x/specy/types";
+
+message Executor {
+  string address = 1; 
+  
+  string iasAttestationReport = 2; 
+  string enclavePk = 3; 
+  string valAddr=4;
+  
+}
+
